@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Explore World - Tours & Travel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>Explore World</h1>
+      <ul>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h2>Your Adventure Awaits</h2>
+      <button onclick="scrollToTours()">Explore Tours</button>
+    </div>
+  </header>
+
+  <section id="tours" class="tours-section">
+    <h2>Our Tour Packages</h2>
+    <div class="tour-card">
+      <img src="images/tour1.jpg" alt="Beach Tour" />
+      <h3>Beach Getaway</h3>
+      <p>Enjoy 5 days at a tropical paradise with guided tours and fun activities.</p>
+    </div>
+    <div class="tour-card">
+      <img src="images/tour2.jpg" alt="Mountain Tour" />
+      <h3>Mountain Adventure</h3>
+      <p>7-day hiking experience with breathtaking views and nature trails.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form onsubmit="handleForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Explore World. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
